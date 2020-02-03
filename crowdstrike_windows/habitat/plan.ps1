@@ -11,6 +11,5 @@ $pkg_deps=@()
 $pkg_build_deps=@()
 
 function Invoke-Install {
- Copy-Item -Path "C:\Users\aig\crowdstrike\$windows_installer" -Destination "$pkg_prefix\crowdstrike_windows_setup.exe" -Recurse -Force
+ Copy-Item -Path "C:\Users\aig\customer-aig\crowdstrike_windows\$windows_installer" -Destination "$pkg_prefix\crowdstrike_windows_setup.exe" -Recurse -Force
 }
-
