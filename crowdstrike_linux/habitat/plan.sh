@@ -9,5 +9,5 @@ pkg_deps=(core/glibc core/bash)
 pkg_description="Crowdstrike agent "
 
 do_install() {
-  cp "" "$pkg_prefix/crowdstrike_linux_setup.rpm" -f
+  cp "" "$pkg_prefix/crowdstrike_linux_setup.rpm"
 }
