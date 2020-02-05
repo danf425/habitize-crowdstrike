@@ -1,0 +1,8 @@
+yum install crowdstrike_linux_setup.rpm
+/opt/CrowdStrike/falconctl -s --cid=<CID>
+systemctl start falcon-sensor
+
+#if rhel 6 >
+#systemctl start falcon-sensor
+#else
+#service falcon-sensor start
