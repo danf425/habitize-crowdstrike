@@ -1,15 +1,14 @@
 $pkg_name="crowdstrike"
-$pkg_origin="danf"
-$pkg_version="5.24.10609"
+$pkg_origin="aig"
+$pkg_version="0.1.0"
 $pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 $pkg_license=@("Apache-2.0")
-$pkg_shasum="b0d91a4163e19f71154751ea7bbb4d3f5a6ebc5b0d80df4c00c5674ccbb4e161"
+$pkg_source="http://artifactory-am2.devops.aig.net/artifactory/chef-local/crowdstrike/Windows/WindowsSensor.exe"
+$pkg_shasum="a141248820f9691906af86a21b7bcb42c35d07dfba31fbe1895aa2f349243254"
 $cid_shasum="E3264501FB484452B49CBA0F1BFBF595-1F"
 $windows_installer="WindowsSensor.exe"
-#$pkg_deps=@("core/dotnet-35sp1-runtime")
-$pkg_deps=@()
-$pkg_build_deps=@()
+
 
 function Invoke-Install {
- Copy-Item -Path "$PLAN_CONTEXT\..\$windows_installer" -Destination "$pkg_prefix\crowdstrike_windows_setup.exe"
+ Copy-Item -Path "$HAB_CACHE_SRC_PATH\$windows_installer" -Destination "$pkg_prefix\crowdstrike_windows_setup.exe"
 }
