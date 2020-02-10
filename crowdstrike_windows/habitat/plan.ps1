@@ -1,6 +1,6 @@
 $pkg_name="crowdstrike"
 $pkg_origin="aig"
-$pkg_version="0.1.0"
+$pkg_version="5.23.10503.0"
 $pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 $pkg_license=@("Apache-2.0")
 $pkg_source="http://artifactory-am2.devops.aig.net/artifactory/chef-local/crowdstrike/Windows/WindowsSensor.exe"
