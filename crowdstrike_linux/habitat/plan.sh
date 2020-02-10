@@ -8,6 +8,10 @@ cid_shasum="E3264501FB484452B49CBA0F1BFBF595-1F"
 pkg_deps=(core/bash)
 pkg_description="Crowdstrike agent for RHEL"
 
+do_build() {
+    return 0
+}
+
 do_install() {
  echo "copy falcon sensor into pkg_prefix"
  cp $PLAN_CONTEXT/../falcon-sensor-5.23.0-8706.el7.x86_64.rpm  $pkg_prefix/crowdstrike_rhel7_setup.rpm
