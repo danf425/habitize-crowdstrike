@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Install CrowdStrike base" 
-yum install {{pkg.path}}/crowdstrike_linux_setup.rpm -y
+yum install {{pkg.path}}/crowdstrike_rhel6_setup.rpm -y
 echo "Silent Install w/ CID"
 /opt/CrowdStrike/falconctl -s --cid=E3264501FB484452B49CBA0F1BFBF595-1F
 echo "Start Falcon Sensor"

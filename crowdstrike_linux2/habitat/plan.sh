@@ -10,5 +10,5 @@ pkg_description="Crowdstrike agent for RHEL"
 
 do_install() {
  echo "copy falcon sensor into pkg_prefix"
- cp $PLAN_CONTEXT/../falcon-sensor-5.23.0-8706.el7.x86_64.rpm  $pkg_prefix/crowdstrike_linux_setup.rpm
+ cp $PLAN_CONTEXT/../falcon-sensor-5.25.0-8902.el6.x86_64.rpm  $pkg_prefix/crowdstrike_rhel6_setup.rpm
 }
