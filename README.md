@@ -1,11 +1,6 @@
 # customer-aig
-Windows executable is part of a 15 day-trial that will work until 2/18/2020  
-Linux executable is AIG binary
+Linked to AIG artifactory (This will not function outside of AIG)
 
 ### Windows agent
-- All set.
-- Pending: CID is hardcoded within install hook (pull variable from plan.ps1)
-
-### Linux agent
-- All set.
-- Pending: CID is hardcoded within install hook (pull variable from plan.psh)
+### RHEL6 agent
+### RHEL7 agent
